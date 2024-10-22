@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         <nav className={styles.navbar}>
             <div className={styles.navContainer}>
                 <div className={styles.logo}>
-                    <img src={mainlogo} alt="ScholarCred Logo" className={styles.logoImage} />
+                    <img onClick={() => alert('Home')} src={mainlogo} alt="ScholarCred Logo" className={styles.logoImage} />
                     {usernames.map((username, index) => (
                         <div key={index} className={styles.username}>Hi "{username}"</div>
                     ))}

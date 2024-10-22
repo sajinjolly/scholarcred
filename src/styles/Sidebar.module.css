@@ -34,6 +34,7 @@ ul {
     position: relative;
     padding: 15px;
     font-weight: 800;
+    border-radius: 5px;
     color: #082241;
     font-family: "Manrope", sans-serif;
     transition: background-color 0.3s, color 0.3s;

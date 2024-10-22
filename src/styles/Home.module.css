@@ -56,7 +56,12 @@ h1 {
   color: red;
 }
 
-
+/* .channelsection{
+  background: linear-gradient(1deg, rgba(255, 255, 255, 1) 20%, rgba(172, 226, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
+  color: #fff;
+   height: 20vh;
+  width: 100%;
+} */
 .channelOverview {
   font-family: 'Manrope', sans-serif;
   color: #000;
@@ -114,7 +119,7 @@ h1 {
 
 .buttonContent {
   display: flex;
-gap: 40px;
+gap: 20px;
   align-items: center;
   justify-content: space-around;
 }
