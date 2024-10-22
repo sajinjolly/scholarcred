@@ -1,0 +1,67 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 166, 217, 0.1);
+    color: #082241;
+    position: fixed;
+    top: 3%;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #082241 transparent; 
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #082241; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.menuItem {
+    margin: 30px 0px;
+    cursor: pointer;
+    position: relative;
+    padding: 15px;
+    font-weight: 800;
+    color: #082241;
+    font-family: "Manrope", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menuItem:hover {
+    color: #fff;
+    background-color: #212529;
+}
+
+.active {
+    background: linear-gradient(107deg, #0A3E60 -73.33%, #082241 1.7%, #0C5277 109.72%);    color: #fff;
+}
+
+.menuItem::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 166, 217, 0.3);
+    border-radius: 10px;
+    transform: translateY(-50%) rotate(10deg);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.menuItem:hover::before {
+    transform: translateY(-50%) rotate(0);
+}
