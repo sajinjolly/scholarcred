@@ -38,12 +38,17 @@ const Sidebar: React.FC = () => {
             className={`${styles.menuItem} ${selected === item.name ? styles.active : ''}`}
             onClick={() => handleItemClick(item.name, item.path)}
           >
-            {item.name}
+            {/* Applying the new class */}
+            <div className={styles.stackText}>
+              {item.name.split(' ').map((word, i) => (
+                <span key={i}>{word}</span>
+              ))}
+            </div>
           </motion.li>
         ))}
       </ul>
     </motion.div>
   );
-}
+};
 
 export default Sidebar;
